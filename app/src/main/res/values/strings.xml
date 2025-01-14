@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Stanford</string>
+    <string-array name="spinner">
+        <item>English 1</item>
+        <item>MAth 2</item>
+        <item>Russian 3</item>
+    </string-array>
+
+</resources>

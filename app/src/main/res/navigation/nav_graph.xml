@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstSplashScreen">
+
+    <fragment
+        android:id="@+id/firstSplashScreen"
+        android:name="FirstSplashScreen"
+        android:label="SecondSplashScreen"
+        tools:layout="@layout/screen_first_splash"
+        >
+        <action
+            android:id="@+id/action_firstSplashScreen_to_secondSplashScreen"
+            app:destination="@id/secondSplashScreen"
+            app:popUpTo="@id/firstSplashScreen"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondSplashScreen"
+        android:name="SecondSplashScreen"
+        android:label="SplashScreen"
+        tools:layout="@layout/screen_second_splash">
+        <action
+            android:id="@+id/action_secondSplashScreen_to_mainScreen"
+            app:destination="@id/mainScreen"
+            app:popUpTo="@id/secondSplashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="qr.team_salilaev.stanford.presentation.screens.main.MainScreen"
+        android:label="MainScreen"
+        tools:layout="@layout/screen_main">
+        <action
+            android:id="@+id/action_mainScreen_to_coursesScreen"
+            app:destination="@id/coursesScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_groupsScreen"
+            app:destination="@id/groupsScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_studentScreen"
+            app:destination="@id/studentsScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_teacherScreen"
+            app:destination="@id/teacherScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/coursesScreen"
+        android:name="qr.team_salilaev.stanford.presentation.screens.courses.CoursesScreen"
+        android:label="CoursesScreen"
+        tools:layout="@layout/screen_courses">
+
+        <action
+            android:id="@+id/action_coursesScreen_to_groupsScreen"
+            app:destination="@id/groupsScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/groupsScreen"
+        android:name="qr.team_salilaev.stanford.presentation.screens.groups.GroupsScreen"
+        tools:layout="@layout/screen_groups"
+        android:label="GroupsScreen" >
+        <action
+            android:id="@+id/action_groupsScreen_to_studentsScreen"
+            app:destination="@id/studentsScreen" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_students"
+        android:id="@+id/studentsScreen"
+        android:name="qr.team_salilaev.stanford.presentation.screens.students.StudentsScreen"
+        android:label="StudentsScreen" />
+    <fragment
+        android:id="@+id/teacherScreen"
+        android:name="qr.team_salilaev.stanford.presentation.screens.teacher.TeacherScreen"
+        android:label="TeacherScreen"
+        tools:layout="@layout/screen_teachers"
+        >
+    </fragment>
+
+</navigation>
