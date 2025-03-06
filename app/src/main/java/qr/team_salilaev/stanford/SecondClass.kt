@@ -13,4 +13,6 @@ class SecondClass {
     val gitHub = 60
 
     val android = 70
+
+    val test5 = 10
 }
