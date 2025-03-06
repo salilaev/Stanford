@@ -1,4 +1,3 @@
 package qr.team_salilaev.stanford
-
-class FirstClass {
+data class FirstClass( val name: String = "John") {
 }
