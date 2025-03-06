@@ -7,4 +7,6 @@ class SecondClass {
     val test4 = 40
 
     val masterTest = 50
+
+    val conflict = 30
 }
