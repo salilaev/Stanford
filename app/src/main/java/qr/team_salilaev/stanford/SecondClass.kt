@@ -5,4 +5,6 @@ class SecondClass {
     val test2 = 20
     val test3 = 30
     val test4 = 40
+
+    val masterTest = 50
 }
