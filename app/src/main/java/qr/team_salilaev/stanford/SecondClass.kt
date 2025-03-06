@@ -8,8 +8,6 @@ class SecondClass {
 
     val masterTest = 50
 
-    val conflict = 30
-
     val gitHub = 60
 
     val android = 70
@@ -19,4 +17,6 @@ class SecondClass {
     val test6 = 10
 
     val test8 = 10
+
+    val test5 = 10
 }
