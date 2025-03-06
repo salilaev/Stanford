@@ -14,5 +14,7 @@ class SecondClass {
 
     val android = 70
 
+    val test5 = 10
+
     val test6 = 10
 }
