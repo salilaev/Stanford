@@ -18,5 +18,5 @@ class SecondClass {
 
     val test6 = 10
 
-    val test7 = 10
+    val test8 = 10
 }
