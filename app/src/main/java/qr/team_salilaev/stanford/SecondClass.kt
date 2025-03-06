@@ -7,4 +7,6 @@ class SecondClass {
     val test4 = 40
 
     val masterTest = 50
+
+    val gitHub = 60
 }
